@@ -1,6 +1,6 @@
 # :recycle: cyclic_list
 
-C++ header-only implementation "like STL" `cyclic_list` container with huge unit-testing system. 
+**C++ header-only implementation "like STL" `cyclic_list` container with huge unit-testing system.**
 
 #
 
