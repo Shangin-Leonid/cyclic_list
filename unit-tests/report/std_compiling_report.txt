@@ -1,8 +1,0 @@
-
-                         'std::forward_list' :
-
-Category    usr           sys          wall           GGC
-Time       4.93          1.13          6.14          353M
-Compiling tests: PASSED
-
-

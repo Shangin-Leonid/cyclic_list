@@ -1,8 +1,0 @@
-
-                         'ctl::cyclic_list' :
-
-Category    usr           sys          wall           GGC
-Time       4.46          0.72          5.36          307M
-Compiling tests: PASSED
-
-
