@@ -15,6 +15,7 @@ T_SECTIONS	:= constructor iterator operator_eq
 .PHONY:
 
 
+# TODO: ad help file
 help:
 	cat $(HELP_FILE)
 	@echo ""
