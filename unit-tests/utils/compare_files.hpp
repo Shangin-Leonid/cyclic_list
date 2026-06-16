@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-#include "../../containers/exception.hpp"
+#include "../../exception.hpp"
 
 
 namespace ut { /* 'ut' = unit-tests */

@@ -12,8 +12,8 @@
 
 #include UT_INCLUDED_LIB_HEADER
 
-#include "../../utils/section.hpp"
-#include "../../utils/log_printing.hpp"
+#include "../utils/section.hpp"
+#include "../utils/log_printing.hpp"
 
 
 namespace ut { /* 'ut' = unit-tests */
@@ -22,7 +22,7 @@ namespace ut { /* 'ut' = unit-tests */
 void t_clear(std::ofstream & fout)
 {
     // Test with <int>
-    
+
     UT_CONTAINER_NAME<int> ic = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     ic.clear();
     if(ic.empty()){
@@ -58,7 +58,7 @@ void t_clear(std::ofstream & fout)
 void t_erase_after(std::ofstream & fout)
 {
     // Test with <int>
-    
+
     UT_CONTAINER_NAME<int> ic = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
     auto it1 = ic.begin();
     for(int i = 0; i < 8; ++i)
@@ -83,7 +83,7 @@ void t_erase_after(std::ofstream & fout)
 void t_pop_front(std::ofstream & fout)
 {
     // Test with <int>
-    
+
     UT_CONTAINER_NAME<int> c = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
     c.pop_front();
     c.pop_front();
@@ -97,7 +97,7 @@ void t_pop_front(std::ofstream & fout)
 void t_removes(std::ofstream & fout)
 {
     // Test with <std::string>
-    
+
     UT_CONTAINER_NAME<std::string> sc = {"C++", "Java", "C++", "C++", "C++", "C#", "Clojure", "Lisp", "PHP", "C+", "Rlang", "Golang", "C++C++", "C++"};
     sc.remove("C++");
     print_container(sc, fout);
@@ -112,7 +112,7 @@ void t_removes(std::ofstream & fout)
 void t_unique(std::ofstream & fout)
 {
     // Test with <int>
-    
+
     UT_CONTAINER_NAME<int> ic = {0, 1, 2, 2, 2, 3, 0, 1, 3, 3, 2, 1, 1, 1, 1, 0, 4, 3, 0, 4, -6, 8, 8, 7};
     ic.unique();
     print_container(ic, fout);

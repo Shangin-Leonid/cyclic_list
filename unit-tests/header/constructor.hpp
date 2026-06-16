@@ -1,4 +1,4 @@
-/* As you can guess, this section test not only constructors, but destructor too (it 
+/* As you can guess, this section test not only constructors, but destructor too (it
     is expected that you run them under valgrind or similar utility */
 
 #pragma once
@@ -17,8 +17,8 @@
 
 #include UT_INCLUDED_LIB_HEADER
 
-#include "../../utils/section.hpp"
-#include "../../utils/log_printing.hpp"
+#include "../utils/section.hpp"
+#include "../utils/log_printing.hpp"
 
 
 #define UT_DEFAULT_CONTAINER_SIZE 20
@@ -141,7 +141,7 @@ void t_iterator_range_constructor(std::ofstream & fout)
     std::list<std::string> l_4_5_6 = {"one", "two", "three", "four", "five", "six", "seven", "next is 8 ?"};
     UT_CONTAINER_NAME<std::string>    c4(l_4_5_6.begin(), l_4_5_6.end());
     print_container(c4, fout);
-    
+
     auto it = l_4_5_6.begin();
     ++it;
     ++it;

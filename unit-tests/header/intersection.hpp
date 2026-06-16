@@ -23,8 +23,8 @@
 
 #include UT_INCLUDED_LIB_HEADER
 
-#include "../../utils/section.hpp"
-#include "../../utils/log_printing.hpp"
+#include "../utils/section.hpp"
+#include "../utils/log_printing.hpp"
 
 
 namespace ut { /* 'ut' = unit-tests */
@@ -55,13 +55,13 @@ void t_swap(std::ofstream & fout)
 
 /*void t_merge(std::ofstream & fout)
 {
-    
+
 }
 
 
 void t_splice_after(std::ofstream & fout)
 {
-    
+
 }*/
 
 

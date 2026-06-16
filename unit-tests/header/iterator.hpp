@@ -10,8 +10,8 @@
 
 #include UT_INCLUDED_LIB_HEADER
 
-#include "../../utils/section.hpp"
-#include "../../utils/log_printing.hpp"
+#include "../utils/section.hpp"
+#include "../utils/log_printing.hpp"
 
 
 #define UT_DEFAULT_CONTAINER_SIZE 20

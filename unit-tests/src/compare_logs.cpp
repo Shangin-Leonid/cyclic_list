@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
 
-#include "../../utils/compare_files.hpp"
+#include "../utils/compare_files.hpp"
 
 using namespace ut;
 

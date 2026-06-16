@@ -11,8 +11,8 @@
 
 #include UT_INCLUDED_LIB_HEADER
 
-#include "../../utils/section.hpp"
-#include "../../utils/log_printing.hpp"
+#include "../utils/section.hpp"
+#include "../utils/log_printing.hpp"
 
 
 namespace ut { /* 'ut' = unit-tests */
@@ -27,7 +27,7 @@ class Emplacable_t
     std::string _str;
 
   public:
-    
+
     Emplacable_t() :
         _ui(0), _c(' '), _str("")
     { }
@@ -118,7 +118,7 @@ void t_emplace_after_front(std::ofstream & fout)
     ut::print_container(sc, fout);
 
     // Test with <ut::Emplacable_t>
-    
+
     UT_CONTAINER_NAME<Emplacable_t> ec = { {11, 'g', "str1"}, {22, 'e', "str2"}, {33, 'i', "str3"}, {44, 'w', "str4"} };
     str = "inserted";
     auto it = ec.cbegin();
@@ -145,7 +145,7 @@ void t_push_front(std::ofstream & fout)
     c.push_front(std::move(s2));
     c.push_front(std::move(s1));
     ut::print_container(c, fout);
-    
+
 }
 
 

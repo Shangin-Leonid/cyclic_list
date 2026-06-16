@@ -6,7 +6,7 @@
 #include <string>
 
 #include "testing_types.hpp"
-#include "../../containers/exception.hpp"
+#include "../../exception.hpp"
 
 
 #define UT_HUGE_SEPARATE_CAPTION_STRING   "============================================="
@@ -21,7 +21,7 @@ class Test_case final
 {
 
   private:
-    
+
     std::string   _case_name;
     testing_fun_t _pfun;
 
@@ -33,7 +33,7 @@ class Test_case final
     }
 
   public:
-    
+
     Test_case() :
         _case_name(""), _pfun(nullptr)
     { }
@@ -60,7 +60,7 @@ class Test_case final
     {
         _case_name = another._case_name;
         _pfun = another._pfun;
-        
+
         return (*this);
     }
 
